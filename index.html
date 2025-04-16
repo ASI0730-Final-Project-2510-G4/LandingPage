@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>FreelanceHub</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    nav a.active {
+      font-weight: bold;
+      color: var(--secundario);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#DescripcionGeneral" class="nav-link">Description</a></li>
+      <li><a href="#Beneficios" class="nav-link">Benefits</a></li>
+      <li><a href="#Nosotros" class="nav-link">About Us</a></li>
+      <li><a href="#faq-section" class="nav-link">FAQ</a></li> 
+      <li><a href="#Contact" class="nav-link">Contact</a></li>
+      <li><a href="">Login</a></li>
+      <li><a href="" id="registro" >Sign up</a></li>
+    </ul>
+    <img src="img/TelaSecureLogo.png">
+    <ul>
+      <li><a href="index.html">FreelanceHub</a></li>
+      <li class="hideOnMobile"><a href="#DescripcionGeneral" class="nav-link">Description</a></li>
+      <li class="hideOnMobile"><a href="#Beneficios" class="nav-link">Benefits</a></li>
+      <li class="hideOnMobile"><a href="#Nosotros" class="nav-link">About Us</a></li>
+      <li class="hideOnMobile"><a href="#faq-section" class="nav-link">FAQ</a></li> 
+      <li><a href="#Contact" class="nav-link">Contact</a></li>
+      <li class="hideOnMobile"><a href="">Login</a></li>
+      <li class="hideOnMobile" id="registro"><a href="">Sign up</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  <header>
+    <section id="banner">
+        <div id="eslogan">
+            <h1><b>Boost your career and connect with opportunities at  <span class="highlight">FreelanceHub</span></h1></b><br>
+            <h3>A platform that allows you to offer your freelance services, showcase your talent, and connect with clients who value what you do.</h3><br>
+            <button class="probar" onclick="window.location.href=''">Sign up</button>
+
+        </div>
+        <img src="img/banner.png" width="500px" class="imagenReferencia">
+    </section>
+  </header>
+
+<section id="DescripcionGeneral">
+    <div class="contenedorDescripcion">
+        <img src="img/descripcion1.png" width="430px" class="imagenReferencia">
+        <br>
+        <div class="puntos">
+            <h3>Smart Search for Professionals by Category and Experience</h3><br>
+            <p>Allows users to find freelancers by filtering based on area, skills, location, and ratings, making it easier to access specific and reliable services.</p>            
+            <br>
+        </div>
+    </div>
+    <div class="contenedorDescripcion">
+        <div class="puntos">
+            <h3>Creation of Self-Managed Professional Profiles</h3><br>
+<p>Freelancers can design their own profiles with personal information, portfolio, pricing, availability, and receive ratings from clients after each project.</p>
+
+            <br>
+        </div>
+        <img src="img/descripcion2.png" width="430px" class="imagenReferencia">
+        <br>
+    </div>
+    <div class="contenedorDescripcion">
+        <img src="img/descripcion3.png" width="430px" class="imagenReferencia">
+        <br>
+        <div class="puntos">
+            <h3>Direct Communication Between Client and Professional</h3><br>
+<p>Integrates a private messaging system so both parties can easily coordinate details such as price, location, service date, and specific job requirements.</p><br>
+
+        </div>
+    </div>
+</section>
+
+<section id="Beneficios">
+    <div class="contenedorBeneficios">
+        <img src="img/check.png" width="100px">
+        <h3>Access to Specialized Talent</h3> <br>
+        <p>Enables users to find professionals in specific areas such as design, marketing, or translation, even if they don't work in physical locations or traditional companies.</p>
+    </div>
+    <div class="contenedorBeneficios">
+        <img src="img/check.png" width="100px">
+        <h3>Effective Professional Self-Promotion</h3> <br>
+        <p>Helps freelancers showcase their experience, portfolio, and ratings, allowing them to stand out and attract new clients without the need for intermediaries.</p>
+    </div>
+    <div class="contenedorBeneficios">
+        <img src="img/check.png" width="100px">
+        <h3>Fast and Personalized Coordination</h3> <br>
+        <p>Provides a direct channel between client and professional to agree on price, location, and schedule, ensuring clear and efficient arrangements.</p>
+    </div>
+    
+</section>
+
+<section id="Nosotros">
+    <div id="nosotros_">
+        <div class="nosotros_text">
+            <h3>About Us</h3><br>
+            <p>Kinetic Systems Integration is the company behind FreelanceHub, a web platform designed to connect independent professionals with individuals and businesses in need of their services in a simple, direct, and secure way.
+            <br><br>
+            Our mission is to empower freelancers and specialized technicians by providing them with tools to showcase their work, build a strong professional reputation, and access real opportunities in their field.
+            <br><br>    
+            Our vision is to become the most trusted and dynamic professional network in the freelance world, serving as the bridge between talent and need across any industry.
+                </div>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CVFkvTKfcqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+  
+    </div>  
+</section>
+
+
+
+
+<section id="faq-section" class="faq-section">
+    <hr>
+    <br><br>
+    <div class="faq-container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq" onclick="toggleAnswer(this)">
+        <h4>What is FreelanceHub?</h4>
+        <div class="faq-answer">
+          <p>FreelanceHub is a web platform created by NovaLink Systems, designed to connect independent professionals with individuals and companies in need of their services in a simple, direct, and secure way. Our goal is to facilitate access to specialized talent and promote greater visibility for freelancers.</p>
+        </div>
+      </div>
+      <div class="faq" onclick="toggleAnswer(this)">
+        <h4>How can I register?</h4>
+        <div class="faq-answer">
+          <p>You can register by clicking the "Sign Up" button at the top of the page and filling out the form with your personal and professional information. Once registered, you'll be able to create your profile, showcase your portfolio, and start receiving job requests.</p>
+        </div>
+      </div>
+      <div class="faq" onclick="toggleAnswer(this)">
+        <h4>What benefits does FreelanceHub offer?</h4>
+        <div class="faq-answer">
+          <p>FreelanceHub offers access to specialized talent in various areas such as design, marketing, translation, and more. It also supports professional self-promotion, helping freelancers showcase their experience, portfolio, and ratings to attract new clients without intermediaries.</p>
+        </div>
+      </div>
+      <div class="faq" onclick="toggleAnswer(this)">
+        <h4>Is it easy to use?</h4>
+        <div class="faq-answer">
+          <p>Yes, FreelanceHub is easy to use, with an intuitive design that allows freelancers to create their profiles, access job opportunities, and coordinate directly with clients to agree on pricing, schedules, and work conditions.</p>
+        </div>
+      </div>
+      <div class="faq" onclick="toggleAnswer(this)">
+        <h4>How can I contact a freelancer directly?</h4>
+        <div class="faq-answer">
+          <p>FreelanceHub offers a direct communication channel between clients and professionals, allowing quick and personalized coordination to agree on pricing, location, and scheduling, ensuring clear and efficient agreements.</p>
+        </div>
+      </div>
+      <div class="faq" onclick="toggleAnswer(this)">
+        <h4>Does FreelanceHub charge any commission per transaction?</h4>
+        <div class="faq-answer">
+          <p>No, FreelanceHub does not charge any commission for transactions between clients and freelancers. However, we offer premium plans for freelancers who wish to access additional features, such as highlighting their profile or increasing their visibility on the platform.</p>
+        </div>
+      </div>
+      <div class="faq" onclick="toggleAnswer(this)">
+        <h4>How can I make sure a freelancer is reliable?</h4>
+        <div class="faq-answer">
+          <p>FreelanceHub allows freelancers to display their ratings and reviews from previous clients. You can check these reviews and ratings to ensure the freelancer has experience and a successful work history. We also offer a dispute resolution system to ensure all transactions are secure.</p>
+        </div>
+      </div>
+      <div class="faq" onclick="toggleAnswer(this)">
+        <h4>Can I hire freelancers for long-term work?</h4>
+        <div class="faq-answer">
+          <p>Yes, FreelanceHub allows clients to hire freelancers for both one-time projects and long-term work. You can establish an ongoing relationship with a freelancer by agreeing on terms and conditions that suit your needs.</p>
+        </div>
+      </div>
+      <div class="faq" onclick="toggleAnswer(this)">
+        <h4>Are there opportunities for freelancers in different industries?</h4>
+        <div class="faq-answer">
+          <p>Yes, FreelanceHub offers opportunities in a wide range of industries, including graphic design, web development, digital marketing, writing, translation, and more. Freelancers can explore job listings that match their skills and experience.</p>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+    <hr>
+  </section>
+  
+
+<section id="Contact" class="Contact-section">
+  <div class="Contact-container">
+    <div class="Contact-info">
+      <p><i class="fas fa-envelope"></i> KSI@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +01 7745452</p>
+      <p><i class="fas fa-mobile-alt"></i> +51 949 313 121</p>
+    </div>
+    <form class="Contact-form">
+      <h2>Contact</h2>
+      <input type="text" placeholder="Name - Last Name" name="name" required>
+      <input type="tel" placeholder="Phone" name="phone">
+      <input type="email" placeholder="Email" name="email" required>
+      <textarea placeholder="Message" name="message" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+<br><br>
+
+<section id="lanzar">
+    <h2>Ready to get started?</h2> 
+<br><br>
+  <button class="probar" onclick="window.location.href=''">Sign up</button>
+</section>
+
+
+
+<footer>
+  <h4>&copy; 2025 FreelanceHub</h4>
+  <div id="siguenos">
+    <h3>Follow us</h3>
+      <a href="https://www.facebook.com" target="_blank" class="facebook-logo">
+          <img width="40px" src="img/logo_fb.png" alt="Facebook Logo">
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="instagram-logo">
+          <img width="40px" src="img/logo_ig.webp" alt="instagramLogo">
+      </a>
+      <a href="https://www.x.com" target="_blank" class="x-logo">
+          <img width="40px" src="img/logo_x.avif" alt="x Logo">
+      </a>
+  </div>
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
