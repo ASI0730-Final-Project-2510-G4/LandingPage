@@ -202,7 +202,7 @@ function changeLanguage() {
     // Footer
     document.getElementById("follow-us-text").textContent = "Follow us";
     document.getElementById("login-text").textContent = "Log in";
-    document.getElementById("start-text").textContent = "Get Started";
+    document.getElementById("start-text").textContent = "Register";
 
     // Nav
     document.getElementById("nav-description").textContent = "Description";
