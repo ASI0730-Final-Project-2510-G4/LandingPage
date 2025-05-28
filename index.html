@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<!-- MAIN NAVIGATION -->
+
 <nav class="main-nav">
   <div class="logo">CreatiLink</div>
   <div class="nav-buttons">
@@ -23,16 +23,16 @@
 
 
   
-<!-- HERO / BANNER PRINCIPAL -->
+
 <header class="hero">
   <h1 id="hero-title"><b>Boost your creative career and connect with opportunities at <span class="highlight">CreatiLink</span></b></h1>
   <h3 id="hero-subtitle">A specialized platform for graphic, fashion and interior designers to showcase portfolios, offer services and collaborate with clients who appreciate your talent.</h3>
   
-  <!-- Botón con la clase button-86 aplicada -->
+
   <a href="https://ccreate-link.vercel.app/" class="btn-comenzar button-86" id="hero-btn">Get Started</a>
   
    <div class="video-wrapper">
-    <!-- Video local -->
+
     <video autoplay muted loop playsinline id="hero-video">
       <source src="img/VIDEO.mkv" type="video/mp4">
       <source src="img/VIDEO.mp4" type="video/mp4">
@@ -40,6 +40,72 @@
       Tu navegador no soporta el formato de video.
     </video>
   </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+ 
+    anime.timeline()
+      .add({
+        targets: "#hero-title",
+        translateY: [-80, 0],
+        opacity: [0, 1],
+        duration: 1600,
+        easing: "easeOutElastic(1, .6)"
+      })
+      .add({
+        targets: "#hero-title .highlight",
+    
+        loop: true,
+        direction: "alternate",
+        duration: 1200,
+        easing: "easeInOutSine",
+        filter: [
+          'drop-shadow(0 0 10px #ff0057)',
+          'drop-shadow(0 0 30px #ff66a8)'
+        ]
+      }, '-=1400') 
+
+
+    anime({
+      targets: "#hero-subtitle",
+      translateX: [-100, 0],
+      opacity: [0, 1],
+      delay: 700,
+      duration: 1300,
+      easing: "easeOutExpo"
+    });
+
+    anime.timeline({ loop: true })
+      .add({
+        targets: "#hero-btn",
+        scale: [0, 1],
+        opacity: [0, 1],
+        delay: 1200,
+        duration: 1100,
+        easing: "easeOutElastic(1, .8)"
+      })
+      .add({
+        targets: "#hero-btn",
+        scale: [1, 1.1],
+        duration: 1500,
+        easing: "easeInOutSine",
+        direction: "alternate",
+        delay: 1000
+      });
+
+ 
+    anime({
+      targets: "#hero-video",
+      scale: [1, 1.05],
+      opacity: [0.85, 1],
+      duration: 8000,
+      easing: "easeInOutSine",
+      direction: "alternate",
+      loop: true
+    });
+  });
+</script>
+
 
 </header>
 
@@ -83,6 +149,8 @@
         <p id="card3-text">Coordinate details like scope, schedule and budget in real time via our secure chat.</p>
       </div>
     </div>
+  
+
   </section>
   
 
@@ -111,6 +179,7 @@
       <h3 id="benefit3-title">Quick and Personalized Coordination</h3>
       <p id="benefit3-text">Provides a direct channel between the client and designer to agree on price, location, and time, ensuring clear and efficient agreements.</p>
     </div>
+
   </section>
   
   
@@ -129,8 +198,6 @@
   
     <h3 id="team-title" class="team-title">Team Members</h3>
     
-    <!-- Aquí no es necesario cambiar nombres o LinkedIn -->
-    <!-- Solo cambiaremos los roles -->
   
     <div class="team-container">
       <div class="team-card">
@@ -332,6 +399,229 @@
 
 
 <script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const descripcionSection = document.querySelector("#DescripcionGeneral");
+    const animateDescripcion = () => {
+      anime({
+        targets: "#DescripcionGeneral .card-descripcion",
+        translateY: [50, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(300),
+        duration: 1200,
+        easing: "easeOutExpo"
+      });
+
+      anime({
+        targets: "#DescripcionGeneral .card-texto h3",
+        opacity: [0, 1],
+        translateX: [-30, 0],
+        delay: anime.stagger(300),
+        duration: 1000,
+        easing: "easeOutCubic"
+      });
+
+      anime({
+        targets: "#DescripcionGeneral .card-texto p",
+        opacity: [0, 1],
+        translateX: [30, 0],
+        delay: anime.stagger(300),
+        duration: 1000,
+        easing: "easeOutCubic"
+      });
+    };
+
+    const observerDescripcion = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateDescripcion();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (descripcionSection) observerDescripcion.observe(descripcionSection);
+
+
+    const beneficiosSection = document.querySelector("#Beneficios");
+    const animateBeneficios = () => {
+      anime({
+        targets: "#Beneficios .benefit-card",
+        translateY: [40, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(300),
+        duration: 1000,
+        easing: "easeOutExpo"
+      });
+
+      anime({
+        targets: "#Beneficios .benefit-card h3",
+        translateX: [-20, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(400),
+        duration: 1000,
+        easing: "easeOutCubic"
+      });
+
+      anime({
+        targets: "#Beneficios .benefit-card p",
+        translateX: [20, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(400),
+        duration: 1000,
+        easing: "easeOutCubic"
+      });
+    };
+
+    const observerBeneficios = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateBeneficios();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (beneficiosSection) observerBeneficios.observe(beneficiosSection);
+
+
+    const nosotrosSection = document.querySelector("#Nosotros");
+    const animateNosotros = () => {
+      anime({
+        targets: "#Nosotros .about-text",
+        translateY: [50, 0],
+        opacity: [0, 1],
+        duration: 1000,
+        easing: "easeOutExpo"
+      });
+      anime({
+        targets: "#Nosotros .team-card",
+        translateY: [60, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(200),
+        duration: 1000,
+        easing: "easeOutCubic"
+      });
+    };
+
+    const observerNosotros = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateNosotros();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (nosotrosSection) observerNosotros.observe(nosotrosSection);
+
+
+    const faqSection = document.querySelector("#faq-section");
+    const animateFAQ = () => {
+      anime({
+        targets: "#faq-section h2",
+        translateY: [30, 0],
+        opacity: [0, 1],
+        duration: 800,
+        easing: "easeOutExpo"
+      });
+      anime({
+        targets: "#faq-section .faq",
+        translateY: [40, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(150),
+        duration: 800,
+        easing: "easeOutCubic"
+      });
+    };
+
+    const observerFAQ = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateFAQ();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (faqSection) observerFAQ.observe(faqSection);
+
+
+    const contactSection = document.querySelector("#Contact");
+    const animateContact = () => {
+      anime({
+        targets: "#Contact .Contact-info p",
+        translateX: [-20, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(150),
+        duration: 800,
+        easing: "easeOutExpo"
+      });
+      anime({
+        targets: "#Contact .Contact-form",
+        translateY: [50, 0],
+        opacity: [0, 1],
+        delay: 400,
+        duration: 1000,
+        easing: "easeOutExpo"
+      });
+    };
+
+    const observerContact = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateContact();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (contactSection) observerContact.observe(contactSection);
+
+
+    const lanzarSection = document.querySelector("#lanzar");
+    const animateLanzar = () => {
+      anime({
+        targets: "#lanzar .titulo-lanzar",
+        translateY: [30, 0],
+        opacity: [0, 1],
+        duration: 800,
+        easing: "easeOutExpo"
+      });
+      anime({
+        targets: "#lanzar .subtitulo-lanzar",
+        translateY: [30, 0],
+        opacity: [0, 1],
+        delay: 200,
+        duration: 800,
+        easing: "easeOutExpo"
+      });
+      anime({
+        targets: "#lanzar .lanzar-card",
+        scale: [0.9, 1],
+        opacity: [0, 1],
+        delay: 400,
+        duration: 800,
+        easing: "easeOutBack"
+      });
+    };
+
+    const observerLanzar = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateLanzar();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    if (lanzarSection) observerLanzar.observe(lanzarSection);
+
+  });
+</script>
+
 
 </body>
 </html>
