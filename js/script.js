@@ -100,6 +100,55 @@ function changeLanguage() {
   document.getElementById("footer-text").innerHTML = "&copy; 2025 CreatiLink";
 
   if (lang === "es") {
+    // Hero
+     document.getElementById("hero-title").innerHTML = '<b>Impulsa tu carrera creativa y conecta con oportunidades en <span class="highlight">CreatiLink</span></b>';
+    document.getElementById("hero-subtitle").textContent = "Una plataforma especializada para diseñadores gráficos, de moda e interiores para mostrar portafolios, ofrecer servicios y colaborar con clientes que valoran tu talento.";
+    document.getElementById("hero-btn").textContent = "Empezar";
+
+     // FAQ
+  document.getElementById("faq-title").textContent = "Preguntas Frecuentes";
+
+  document.getElementById("faq1-question").textContent = "¿Qué es CreatiLink?";
+  document.getElementById("faq1-answer").textContent = "CreatiLink es una plataforma web creada por estudiantes de la UPC que conecta diseñadores independientes con clientes que necesitan servicios de diseño. Su objetivo es proporcionar visibilidad y oportunidades laborales a diseñadores con formación técnica o académica que, de otro modo, tendrían dificultades para ingresar al mercado formal. La plataforma permite mostrar portafolios, chatear, coordinar servicios y calificar experiencias. También es un proyecto autosustentable y escalable, con el potencial de integrar tecnologías como pagos en línea e inteligencia artificial.";
+
+  document.getElementById("faq2-question").textContent = "¿Cómo puedo registrarme?";
+  document.getElementById("faq2-answer").textContent = "Para registrarte en CreatiLink, debes ingresar a la plataforma, hacer clic en 'Registrarse', seleccionar si eres diseñador o cliente, completar tus datos, aceptar los términos y verificar tu correo electrónico. Luego, podrás iniciar sesión y usar la aplicación.";
+
+  document.getElementById("faq3-question").textContent = "¿Qué beneficios ofrece CreatiLink?";
+  document.getElementById("faq3-answer").textContent = "CreatiLink ofrece visibilidad y oportunidades laborales a los diseñadores, permitiéndoles mostrar sus portafolios y recibir calificaciones. Para los clientes, facilita la búsqueda y contacto con diseñadores de calidad. También es una plataforma escalable con el potencial de integrar tecnologías modernas.";
+
+  document.getElementById("faq4-question").textContent = "¿Es fácil de usar?";
+  document.getElementById("faq4-answer").textContent = "Sí, CreatiLink es fácil de usar, con una interfaz sencilla que permite a los diseñadores crear rápidamente sus perfiles y a los clientes encontrar y contactar a los diseñadores de manera directa y eficiente.";
+
+  document.getElementById("faq5-question").textContent = "¿Cómo puedo contactar a un freelancer directamente?";
+  document.getElementById("faq5-answer").textContent = "Para contactar a un freelancer en CreatiLink, busca su perfil, revisa su portafolio y calificaciones, y utiliza el botón 'Contactar' o el chat para enviar un mensaje y coordinar los detalles del proyecto.";
+
+  document.getElementById("faq6-question").textContent = "¿CreatiLink cobra alguna comisión por transacción?";
+  document.getElementById("faq6-answer").textContent = "Actualmente, CreatiLink no cobra comisiones por transacciones. La plataforma se financia principalmente a través de publicidad y promoción de diseñadores destacados, lo que permite el acceso gratuito para todos los usuarios. Sin embargo, en el futuro, estamos considerando integrar pasarelas de pago para facilitar las transacciones directas entre diseñadores y clientes. En ese caso, evaluaremos la implementación de tarifas para cubrir los costos operativos y garantizar la sostenibilidad de la plataforma. Por ahora, puedes disfrutar de CreatiLink sin preocuparte por tarifas adicionales.";
+
+  document.getElementById("faq7-question").textContent = "¿Cómo puedo asegurarme de que un freelancer es confiable?";
+  document.getElementById("faq7-answer").textContent = "Para asegurarte de que un freelancer es confiable en CreatiLink, revisa su perfil, portafolio y las calificaciones de otros clientes. Verifica su experiencia, establece comunicación directa para aclarar dudas y asegúrate de tener un acuerdo claro sobre el proyecto.";
+
+  document.getElementById("faq8-question").textContent = "¿Puedo contratar freelancers para trabajos a largo plazo?";
+  document.getElementById("faq8-answer").textContent = "Sí, en CreatiLink puedes contratar freelancers para proyectos a largo plazo, acordando los términos del contrato, tarifas y plazos, y evaluando su trabajo para asegurar la calidad continua.";
+
+  document.getElementById("faq9-question").textContent = "¿Existen oportunidades para freelancers en diferentes industrias?";
+  document.getElementById("faq9-answer").textContent = "Sí, CreatiLink ofrece oportunidades freelance en una variedad de industrias, especialmente en diseño gráfico, diseño web y otros campos creativos, permitiendo que los freelancers ofrezcan sus servicios en múltiples sectores.";
+
+
+    // Contacto
+    document.getElementById("contact-email").textContent = "KSI@gmail.com";
+    document.getElementById("contact-phone").textContent = "+01 7745452";
+    document.getElementById("contact-mobile").textContent = "+51 949 313 121";
+  
+    document.getElementById("contact-form-title").textContent = "Contacto";
+    document.getElementById("contact-submit").textContent = "Enviar";
+
+     // Lanzar
+  document.getElementById("launch-title").textContent = "Impulsa tu carrera creativa hoy";
+  document.getElementById("launch-subtitle").textContent = "Únete a nuestra comunidad de diseñadores y comienza a mostrar tu talento al mundo.";
+  document.getElementById("get-started-btn").textContent = "EMPEZAR";
+
     // Footer
     document.getElementById("follow-us-text").textContent = "Síguenos";
     document.getElementById("login-text").textContent = "Iniciar sesión";
@@ -148,57 +197,57 @@ function changeLanguage() {
    document.getElementById("role-3").textContent = "Desarrollador";
    document.getElementById("role-4").textContent = "Desarrollador";
    document.getElementById("role-5").textContent = "Desarrollador";
+ 
+   
+  }
+   else if (lang === "en") {
 
-
+    
     // FAQ
-  document.getElementById("faq-title").textContent = "Preguntas Frecuentes";
+    document.getElementById("faq-title").textContent = "Frequently Asked Questions";
 
-  document.getElementById("faq1-question").textContent = "¿Qué es CreatiLink?";
-  document.getElementById("faq1-answer").textContent = "CreatiLink es una plataforma web creada por estudiantes de la UPC que conecta diseñadores independientes con clientes que necesitan servicios de diseño. Su objetivo es proporcionar visibilidad y oportunidades laborales a diseñadores con formación técnica o académica que, de otro modo, tendrían dificultades para ingresar al mercado formal. La plataforma permite mostrar portafolios, chatear, coordinar servicios y calificar experiencias. También es un proyecto autosustentable y escalable, con el potencial de integrar tecnologías como pagos en línea e inteligencia artificial.";
-
-  document.getElementById("faq2-question").textContent = "¿Cómo puedo registrarme?";
-  document.getElementById("faq2-answer").textContent = "Para registrarte en CreatiLink, debes ingresar a la plataforma, hacer clic en 'Registrarse', seleccionar si eres diseñador o cliente, completar tus datos, aceptar los términos y verificar tu correo electrónico. Luego, podrás iniciar sesión y usar la aplicación.";
-
-  document.getElementById("faq3-question").textContent = "¿Qué beneficios ofrece CreatiLink?";
-  document.getElementById("faq3-answer").textContent = "CreatiLink ofrece visibilidad y oportunidades laborales a los diseñadores, permitiéndoles mostrar sus portafolios y recibir calificaciones. Para los clientes, facilita la búsqueda y contacto con diseñadores de calidad. También es una plataforma escalable con el potencial de integrar tecnologías modernas.";
-
-  document.getElementById("faq4-question").textContent = "¿Es fácil de usar?";
-  document.getElementById("faq4-answer").textContent = "Sí, CreatiLink es fácil de usar, con una interfaz sencilla que permite a los diseñadores crear rápidamente sus perfiles y a los clientes encontrar y contactar a los diseñadores de manera directa y eficiente.";
-
-  document.getElementById("faq5-question").textContent = "¿Cómo puedo contactar a un freelancer directamente?";
-  document.getElementById("faq5-answer").textContent = "Para contactar a un freelancer en CreatiLink, busca su perfil, revisa su portafolio y calificaciones, y utiliza el botón 'Contactar' o el chat para enviar un mensaje y coordinar los detalles del proyecto.";
-
-  document.getElementById("faq6-question").textContent = "¿CreatiLink cobra alguna comisión por transacción?";
-  document.getElementById("faq6-answer").textContent = "Actualmente, CreatiLink no cobra comisiones por transacciones. La plataforma se financia principalmente a través de publicidad y promoción de diseñadores destacados, lo que permite el acceso gratuito para todos los usuarios. Sin embargo, en el futuro, estamos considerando integrar pasarelas de pago para facilitar las transacciones directas entre diseñadores y clientes. En ese caso, evaluaremos la implementación de tarifas para cubrir los costos operativos y garantizar la sostenibilidad de la plataforma. Por ahora, puedes disfrutar de CreatiLink sin preocuparte por tarifas adicionales.";
-
-  document.getElementById("faq7-question").textContent = "¿Cómo puedo asegurarme de que un freelancer es confiable?";
-  document.getElementById("faq7-answer").textContent = "Para asegurarte de que un freelancer es confiable en CreatiLink, revisa su perfil, portafolio y las calificaciones de otros clientes. Verifica su experiencia, establece comunicación directa para aclarar dudas y asegúrate de tener un acuerdo claro sobre el proyecto.";
-
-  document.getElementById("faq8-question").textContent = "¿Puedo contratar freelancers para trabajos a largo plazo?";
-  document.getElementById("faq8-answer").textContent = "Sí, en CreatiLink puedes contratar freelancers para proyectos a largo plazo, acordando los términos del contrato, tarifas y plazos, y evaluando su trabajo para asegurar la calidad continua.";
-
-  document.getElementById("faq9-question").textContent = "¿Existen oportunidades para freelancers en diferentes industrias?";
-  document.getElementById("faq9-answer").textContent = "Sí, CreatiLink ofrece oportunidades freelance en una variedad de industrias, especialmente en diseño gráfico, diseño web y otros campos creativos, permitiendo que los freelancers ofrezcan sus servicios en múltiples sectores.";
-
-
-    // Contacto
-    document.getElementById("contact-email").textContent = "KSI@gmail.com";
-    document.getElementById("contact-phone").textContent = "+01 7745452";
-    document.getElementById("contact-mobile").textContent = "+51 949 313 121";
+    document.getElementById("faq1-question").textContent = "What is CreatiLink?";
+    document.getElementById("faq1-answer").textContent = "CreatiLink is a web platform created by UPC students that connects independent designers with clients in need of design services. Its goal is to provide visibility and job opportunities to designers with technical or academic training who would otherwise struggle to enter the formal market. The platform allows for displaying portfolios, chatting, coordinating services, and rating experiences. It is also a self-sustaining and scalable project, with the potential to integrate technologies such as online payments and artificial intelligence.";
   
-    document.getElementById("contact-form-title").textContent = "Contacto";
-    document.getElementById("contact-submit").textContent = "Enviar";
-
-     // Lanzar
-  document.getElementById("launch-title").textContent = "Impulsa tu carrera creativa hoy";
-  document.getElementById("launch-subtitle").textContent = "Únete a nuestra comunidad de diseñadores y comienza a mostrar tu talento al mundo.";
-  document.getElementById("get-started-btn").textContent = "EMPEZAR";
-
-  document.getElementById("hero-title").innerHTML = "<b>Impulsa tu carrera creativa y conéctate con oportunidades en <span class='highlight'>CreatiLink</span></b>";
-  document.getElementById("hero-subtitle").textContent = "Una plataforma especializada para diseñadores gráficos, de moda y de interiores para mostrar portfolios, ofrecer servicios y colaborar con clientes que aprecian tu talento.";
-  document.getElementById("hero-btn").textContent = "EMPEZAR";
+    document.getElementById("faq2-question").textContent = "How can I register?";
+    document.getElementById("faq2-answer").textContent = "To register with CreatiLink, you must log in to the platform, click 'Sign up', select whether you are a designer or client, fill in your details, accept the terms, and verify your email address. You can then log in and use the app.";
   
-  } else if (lang === "en") {
+    document.getElementById("faq3-question").textContent = "What benefits does CreatiLink offer?";
+    document.getElementById("faq3-answer").textContent = "CreatiLink offers visibility and job opportunities to designers, allowing them to showcase their portfolios and receive ratings. For clients, it makes it easier to find and contact quality designers. It's also a scalable platform with the potential to integrate modern technologies.";
+  
+    document.getElementById("faq4-question").textContent = "Is it easy to use?";
+    document.getElementById("faq4-answer").textContent = "Yes, CreatiLink is easy to use, with a simple interface that allows designers to quickly create profiles and clients to find and contact designers directly and efficiently.";
+  
+    document.getElementById("faq5-question").textContent = "How can I contact a freelancer directly?";
+    document.getElementById("faq5-answer").textContent = "To contact a freelancer on CreatiLink, find their profile, review their portfolio and qualifications, and use the 'Contact' button or chat to send a message and coordinate project details.";
+  
+    document.getElementById("faq6-question").textContent = "Does CreatiLink charge any commission per transaction?";
+    document.getElementById("faq6-answer").textContent = "Currently, CreatiLink does not charge transaction fees. The platform is primarily funded through advertising and promotion of featured designers, which allows for free access for all users. However, in the future, we are considering integrating payment gateways to facilitate direct transactions between designers and clients. In that case, we will evaluate the implementation of fees to cover operating costs and ensure the platform's sustainability. For now, you can enjoy CreatiLink without worrying about additional fees.";
+  
+    document.getElementById("faq7-question").textContent = "How can I make sure a freelancer is reliable?";
+    document.getElementById("faq7-answer").textContent = "To ensure a freelancer is trustworthy on CreatiLink, review their profile, portfolio, and other client ratings. Verify their experience, establish direct communication to clarify any concerns, and make sure you have a clear agreement on the project.";
+  
+    document.getElementById("faq8-question").textContent = "Can I hire freelancers for long-term work?";
+    document.getElementById("faq8-answer").textContent = "Yes, at CreatiLink you can hire freelancers for long-term projects, agreeing on contract terms, rates, and deadlines, and rating their work to ensure ongoing quality.";
+  
+    document.getElementById("faq9-question").textContent = "Are there opportunities for freelancers in different industries?";
+    document.getElementById("faq9-answer").textContent = "Yes, CreatiLink offers freelance opportunities in a variety of industries, especially graphic design, web design, and other creative fields, allowing freelancers to offer their services in multiple fields.";
+   document.getElementById("contact-email").textContent = "KSI@gmail.com";
+  document.getElementById("contact-phone").textContent = "+01 7745452";
+  document.getElementById("contact-mobile").textContent = "+51 949 313 121";
+
+  document.getElementById("contact-form-title").textContent = "Contact";
+  document.getElementById("contact-submit").textContent = "Submit";
+
+  // Lanzar
+  document.getElementById("launch-title").textContent = "Boost Your Creative Career Today";
+  document.getElementById("launch-subtitle").textContent = "Join our community of designers and start showcasing your talent to the world.";
+  document.getElementById("get-started-btn").textContent = "GET STARTED";
+
+   // Hero
+   document.getElementById("hero-title").innerHTML = '<b>Boost your creative career and connect with opportunities at <span class="highlight">CreatiLink</span></b>';
+    document.getElementById("hero-subtitle").textContent = "A specialized platform for graphic, fashion and interior designers to showcase portfolios, offer services and collaborate with clients who appreciate your talent.";
+    document.getElementById("hero-btn").textContent = "Get Started";
     // Footer
     document.getElementById("follow-us-text").textContent = "Follow us";
     document.getElementById("login-text").textContent = "Log in";
@@ -249,54 +298,6 @@ function changeLanguage() {
   document.getElementById("role-4").textContent = "Developer";
   document.getElementById("role-5").textContent = "Developer";
   
-
-    // FAQ
-    document.getElementById("faq-title").textContent = "Frequently Asked Questions";
-
-    document.getElementById("faq1-question").textContent = "What is CreatiLink?";
-    document.getElementById("faq1-answer").textContent = "CreatiLink is a web platform created by UPC students that connects independent designers with clients in need of design services. Its goal is to provide visibility and job opportunities to designers with technical or academic training who would otherwise struggle to enter the formal market. The platform allows for displaying portfolios, chatting, coordinating services, and rating experiences. It is also a self-sustaining and scalable project, with the potential to integrate technologies such as online payments and artificial intelligence.";
-  
-    document.getElementById("faq2-question").textContent = "How can I register?";
-    document.getElementById("faq2-answer").textContent = "To register with CreatiLink, you must log in to the platform, click 'Sign up', select whether you are a designer or client, fill in your details, accept the terms, and verify your email address. You can then log in and use the app.";
-  
-    document.getElementById("faq3-question").textContent = "What benefits does CreatiLink offer?";
-    document.getElementById("faq3-answer").textContent = "CreatiLink offers visibility and job opportunities to designers, allowing them to showcase their portfolios and receive ratings. For clients, it makes it easier to find and contact quality designers. It's also a scalable platform with the potential to integrate modern technologies.";
-  
-    document.getElementById("faq4-question").textContent = "Is it easy to use?";
-    document.getElementById("faq4-answer").textContent = "Yes, CreatiLink is easy to use, with a simple interface that allows designers to quickly create profiles and clients to find and contact designers directly and efficiently.";
-  
-    document.getElementById("faq5-question").textContent = "How can I contact a freelancer directly?";
-    document.getElementById("faq5-answer").textContent = "To contact a freelancer on CreatiLink, find their profile, review their portfolio and qualifications, and use the 'Contact' button or chat to send a message and coordinate project details.";
-  
-    document.getElementById("faq6-question").textContent = "Does CreatiLink charge any commission per transaction?";
-    document.getElementById("faq6-answer").textContent = "Currently, CreatiLink does not charge transaction fees. The platform is primarily funded through advertising and promotion of featured designers, which allows for free access for all users. However, in the future, we are considering integrating payment gateways to facilitate direct transactions between designers and clients. In that case, we will evaluate the implementation of fees to cover operating costs and ensure the platform's sustainability. For now, you can enjoy CreatiLink without worrying about additional fees.";
-  
-    document.getElementById("faq7-question").textContent = "How can I make sure a freelancer is reliable?";
-    document.getElementById("faq7-answer").textContent = "To ensure a freelancer is trustworthy on CreatiLink, review their profile, portfolio, and other client ratings. Verify their experience, establish direct communication to clarify any concerns, and make sure you have a clear agreement on the project.";
-  
-    document.getElementById("faq8-question").textContent = "Can I hire freelancers for long-term work?";
-    document.getElementById("faq8-answer").textContent = "Yes, at CreatiLink you can hire freelancers for long-term projects, agreeing on contract terms, rates, and deadlines, and rating their work to ensure ongoing quality.";
-  
-    document.getElementById("faq9-question").textContent = "Are there opportunities for freelancers in different industries?";
-    document.getElementById("faq9-answer").textContent = "Yes, CreatiLink offers freelance opportunities in a variety of industries, especially graphic design, web design, and other creative fields, allowing freelancers to offer their services in multiple fields.";
-  
-     // Contact
-  document.getElementById("contact-email").textContent = "KSI@gmail.com";
-  document.getElementById("contact-phone").textContent = "+01 7745452";
-  document.getElementById("contact-mobile").textContent = "+51 949 313 121";
-
-  document.getElementById("contact-form-title").textContent = "Contact";
-  document.getElementById("contact-submit").textContent = "Submit";
-
-  // Lanzar
-  document.getElementById("launch-title").textContent = "Boost Your Creative Career Today";
-  document.getElementById("launch-subtitle").textContent = "Join our community of designers and start showcasing your talent to the world.";
-  document.getElementById("get-started-btn").textContent = "GET STARTED";
-
-   // Hero
-   document.getElementById("hero-title").innerHTML = "<b>Boost your creative career and connect with opportunities at <span class='highlight'>CreatiLink</span></b>";
-   document.getElementById("hero-subtitle").textContent = "A specialized platform for graphic, fashion and interior designers to showcase portfolios, offer services and collaborate with clients who appreciate your talent.";
-   document.getElementById("hero-btn").textContent = "GET STARTED";
-}}
-
+}
+}
 
